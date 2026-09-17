@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quiz Bee: Millionaire Edition</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <section id="start-screen" class="screen active">
+    <div class="panel">
+      <h1>💰 Quiz Bee: Millionaire Edition</h1>
+      <p class="subtitle">Answer correctly to climb the money ladder.<br/>One wrong answer ends the game.</p>
+      <ul class="instructions">
+        <li>Each question has 4 choices — pick the correct one.</li>
+        <li>Questions get harder as you progress: Easy → Medium → Hard.</li>
+        <li>Use your one 50/50 lifeline wisely.</li>
+        <li>Answer all questions to become a Millionaire!</li>
+      </ul>
+      <button id="start-btn" class="btn primary">Play</button>
+    </div>
+  </section>
+
+  <!-- GAME SCREEN -->
+  <section id="game-screen" class="screen">
+    <div class="game-layout">
+
+      <aside class="ladder" id="ladder">
+        <!-- filled by JS -->
+      </aside>
+
+      <div class="game-main">
+        <div class="top-bar">
+          <span id="difficulty-badge" class="badge">EASY</span>
+          <div class="top-bar-right">
+            <button id="lifeline-btn" class="btn lifeline">50/50</button>
+            <button id="mid-restart-btn" class="btn restart-mid">Restart</button>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <p id="question-text">Question text goes here</p>
+        </div>
+
+        <div class="choices" id="choices">
+          <!-- 4 choice buttons filled by JS -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- END SCREEN -->
+  <section id="end-screen" class="screen">
+    <div class="panel">
+      <h1 id="end-title">🎉 You Won!</h1>
+      <p id="end-message">You answered every question correctly!</p>
+      <p class="winnings">Final Winnings: <span id="final-amount">₱0</span></p>
+      <button id="restart-btn" class="btn primary">Play Again</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
