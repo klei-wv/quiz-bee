@@ -168,7 +168,7 @@ h1 {
   margin: -6px 0 16px 0;
   padding: 0 4px;
   font-size: 0.85rem;
-  color: #f4c563;
+  color: #000000;
   font-style: italic;
   opacity: 0;
   transition: opacity 0.2s ease;
@@ -184,6 +184,21 @@ h1 {
   padding: 10px 18px;
   font-size: 0.9rem;
   color: #3a1408;
+}
+
+.btn.home-mid {
+  background: linear-gradient(180deg, #9fb8d0, #5f86a8);
+  box-shadow: 0 4px 0 #3a5468;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  color: #14293d;
+}
+
+.btn.secondary {
+  background: linear-gradient(180deg, #d9c9a8, #b8a37a);
+  box-shadow: 0 4px 0 #7a6a48;
+  color: #3a2f1a;
+  margin-top: 10px;
 }
 
 /* ---------- GAME LAYOUT ---------- */

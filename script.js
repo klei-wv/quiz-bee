@@ -36,6 +36,8 @@ const screens = {
 const startBtn = document.getElementById('start-btn');
 const restartBtn = document.getElementById('restart-btn');
 const midRestartBtn = document.getElementById('mid-restart-btn');
+const midHomeBtn = document.getElementById('mid-home-btn');
+const homeBtn = document.getElementById('home-btn');
 const fiftyFiftyBtn = document.getElementById('fifty-fifty-btn');
 const hintBtn = document.getElementById('hint-btn');
 const answerBoostBtn = document.getElementById('answer-boost-btn');
@@ -245,10 +247,10 @@ function endGame(won) {
   const wonAmount = won ? MONEY_LADDER[MONEY_LADDER.length - 1] : (currentIndex > 0 ? MONEY_LADDER[currentIndex - 1] : 0);
 
   if (won) {
-    endTitle.textContent = '👑 Hail, The Quest Champion!';
+    endTitle.textContent = 'Hail, Champion of the Quest';
     endMessage.textContent = 'A fortune fit for a monarch awaits thee!';
   } else {
-    endTitle.textContent = '🛌 The Quest Has Ended';
+    endTitle.textContent = 'The Quest Has Ended';
     endMessage.textContent = 'Return when thy wits are sharper, brave soul.';
   }
 
@@ -275,6 +277,12 @@ function startGame() {
   renderQuestion();
 }
 
+// ---------- GO TO HOME ----------
+function goToHome() {
+  clearTimer();
+  showScreen('start');
+}
+
 // ---------- EVENTS ----------
 startBtn.addEventListener('click', startGame);
 restartBtn.addEventListener('click', startGame);
@@ -286,6 +294,12 @@ midRestartBtn.addEventListener('click', () => {
     startGame();
   }
 });
+midHomeBtn.addEventListener('click', () => {
+  if (confirm('Go to Home? Your current progress will be lost.')) {
+    goToHome();
+  }
+});
+homeBtn.addEventListener('click', goToHome);
 
 // ---------- INIT ----------
 loadQuestions();
