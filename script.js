@@ -7,11 +7,24 @@ const MONEY_LADDER = [
 
 const QUESTIONS_PER_DIFFICULTY = 5; // 5 easy + 5 medium + 5 hard = 15 total per playthrough
 
+const TIME_LIMITS = {
+  easy: 20,
+  medium: 40,
+  hard: 60,
+};
+
 // ---------- STATE ----------
 let allQuestions = [];
 let gameQuestions = [];
 let currentIndex = 0;
-let lifelineUsed = false;
+let timerInterval = null;
+let timeLeft = 0;
+
+// Lifelines: each usable ONCE per playthrough
+let fiftyFiftyUsed = false;
+let hintUsed = false;
+let answerBoostUsed = false;
+let answerBoostActive = false; // true only while armed for the CURRENT hard question
 
 // ---------- DOM ----------
 const screens = {
@@ -23,10 +36,14 @@ const screens = {
 const startBtn = document.getElementById('start-btn');
 const restartBtn = document.getElementById('restart-btn');
 const midRestartBtn = document.getElementById('mid-restart-btn');
-const lifelineBtn = document.getElementById('lifeline-btn');
+const fiftyFiftyBtn = document.getElementById('fifty-fifty-btn');
+const hintBtn = document.getElementById('hint-btn');
+const answerBoostBtn = document.getElementById('answer-boost-btn');
+const hintBox = document.getElementById('hint-box');
 const questionText = document.getElementById('question-text');
 const choicesContainer = document.getElementById('choices');
 const difficultyBadge = document.getElementById('difficulty-badge');
+const timerDisplay = document.getElementById('timer-display');
 const ladderEl = document.getElementById('ladder');
 const endTitle = document.getElementById('end-title');
 const endMessage = document.getElementById('end-message');
@@ -81,6 +98,42 @@ function renderLadder() {
   });
 }
 
+// ---------- TIMER ----------
+function clearTimer() {
+  if (timerInterval) {
+    clearInterval(timerInterval);
+    timerInterval = null;
+  }
+}
+
+function startTimer(difficulty) {
+  clearTimer();
+  timeLeft = TIME_LIMITS[difficulty];
+  updateTimerDisplay();
+
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    updateTimerDisplay();
+    if (timeLeft <= 0) {
+      clearTimer();
+      handleTimeUp();
+    }
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  timerDisplay.textContent = '⏱ ' + timeLeft;
+  timerDisplay.classList.toggle('low', timeLeft <= 5);
+}
+
+function handleTimeUp() {
+  const q = gameQuestions[currentIndex];
+  const buttons = Array.from(choicesContainer.children);
+  buttons.forEach(b => b.disabled = true);
+  buttons[q.correctIndex].classList.add('correct');
+  setTimeout(() => endGame(false), 1200);
+}
+
 // ---------- RENDER QUESTION ----------
 function renderQuestion() {
   const q = gameQuestions[currentIndex];
@@ -96,19 +149,39 @@ function renderQuestion() {
     choicesContainer.appendChild(btn);
   });
 
+  // Reset the hint box for the new question
+  hintBox.textContent = '';
+  hintBox.classList.remove('visible');
+
+  // Answer Boost can only be armed on a HARD question, and only once per game
+  answerBoostActive = false;
+  answerBoostBtn.classList.remove('active');
+  answerBoostBtn.disabled = answerBoostUsed || q.difficulty !== 'hard';
+
   renderLadder();
+  startTimer(q.difficulty);
 }
 
 // ---------- ANSWER HANDLING ----------
 function handleAnswer(selectedIdx, btnEl) {
+  clearTimer();
   const q = gameQuestions[currentIndex];
   const buttons = Array.from(choicesContainer.children);
   buttons.forEach(b => b.disabled = true);
 
   if (selectedIdx === q.correctIndex) {
     btnEl.classList.add('correct');
+
+    // If Answer Boost was armed on this hard question and it was answered
+    // correctly, skip the next question entirely and keep moving.
+    const boostTriggered = answerBoostActive;
+    if (boostTriggered) {
+      answerBoostUsed = true;
+      answerBoostActive = false;
+    }
+
     setTimeout(() => {
-      currentIndex++;
+      currentIndex += boostTriggered ? 2 : 1;
       if (currentIndex >= gameQuestions.length) {
         endGame(true);
       } else {
@@ -122,11 +195,11 @@ function handleAnswer(selectedIdx, btnEl) {
   }
 }
 
-// ---------- LIFELINE (50/50) ----------
-function useLifeline() {
-  if (lifelineUsed) return;
-  lifelineUsed = true;
-  lifelineBtn.disabled = true;
+// ---------- LIFELINE 1: 50/50 ----------
+function useFiftyFifty() {
+  if (fiftyFiftyUsed) return;
+  fiftyFiftyUsed = true;
+  fiftyFiftyBtn.disabled = true;
 
   const q = gameQuestions[currentIndex];
   const buttons = Array.from(choicesContainer.children);
@@ -136,8 +209,39 @@ function useLifeline() {
   toHide.forEach(i => buttons[i].classList.add('disabled-fade'));
 }
 
+// ---------- LIFELINE 2: HINT RESCUE ----------
+// Gives a SUBTLE clue — never the answer itself. Reveals the first letter
+// and word count of the correct choice so the player still has to think.
+function useHint() {
+  if (hintUsed) return;
+  hintUsed = true;
+  hintBtn.disabled = true;
+
+  const q = gameQuestions[currentIndex];
+  const correctText = q.choices[q.correctIndex];
+  const firstLetter = correctText.trim().charAt(0).toUpperCase();
+  const wordCount = correctText.trim().split(/\s+/).length;
+  const wordLabel = wordCount === 1 ? 'one word' : `${wordCount} words`;
+
+  hintBox.textContent = `💡 Hint: The correct answer starts with "${firstLetter}" and has ${wordLabel}.`;
+  hintBox.classList.add('visible');
+}
+
+// ---------- LIFELINE 3: ANSWER BOOST ----------
+// Only usable while the CURRENT question is HARD. Once armed, answering
+// that hard question correctly lets you skip the next question for free.
+function useAnswerBoost() {
+  const q = gameQuestions[currentIndex];
+  if (answerBoostUsed || q.difficulty !== 'hard' || answerBoostActive) return;
+
+  answerBoostActive = true;
+  answerBoostBtn.classList.add('active');
+  answerBoostBtn.disabled = true;
+}
+
 // ---------- END GAME ----------
 function endGame(won) {
+  clearTimer();
   const wonAmount = won ? MONEY_LADDER[MONEY_LADDER.length - 1] : (currentIndex > 0 ? MONEY_LADDER[currentIndex - 1] : 0);
 
   if (won) {
@@ -154,9 +258,18 @@ function endGame(won) {
 
 // ---------- START / RESTART ----------
 function startGame() {
+  clearTimer();
   currentIndex = 0;
-  lifelineUsed = false;
-  lifelineBtn.disabled = false;
+
+  fiftyFiftyUsed = false;
+  hintUsed = false;
+  answerBoostUsed = false;
+  answerBoostActive = false;
+  fiftyFiftyBtn.disabled = false;
+  hintBtn.disabled = false;
+  answerBoostBtn.disabled = true; // re-enabled per question if it's hard
+  answerBoostBtn.classList.remove('active');
+
   buildGameQuestions();
   showScreen('game');
   renderQuestion();
@@ -165,7 +278,9 @@ function startGame() {
 // ---------- EVENTS ----------
 startBtn.addEventListener('click', startGame);
 restartBtn.addEventListener('click', startGame);
-lifelineBtn.addEventListener('click', useLifeline);
+fiftyFiftyBtn.addEventListener('click', useFiftyFifty);
+hintBtn.addEventListener('click', useHint);
+answerBoostBtn.addEventListener('click', useAnswerBoost);
 midRestartBtn.addEventListener('click', () => {
   if (confirm('Restart the game? Your current progress will be lost.')) {
     startGame();

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Quiz Bee: General Knowledge</title>
+<title>Katanungan: Millionaire Quiz Bee</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,15 +11,32 @@
   <!-- START SCREEN -->
   <section id="start-screen" class="screen active">
     <div class="panel">
-      <h1>Quiz Bee: General Knowledge
-      </h1>
-      <p class="subtitle">Answer correctly to climb the money ladder.<br/>One wrong answer ends the game.</p>
+      <h1>💰 Katanungan: Millionaire Quiz Bee</h1>
+      <p class="subtitle">Answer correctly to climb the money ladder.<br/>One wrong answer — or running out of time — ends the game.</p>
+
       <ul class="instructions">
-        <li>Each question has 4 choices — pick the correct one.</li>
-        <li>Questions get harder as you progress: Easy → Medium → Hard.</li>
-        <li>Use your one 50/50 lifeline wisely.</li>
-        <li>Answer all questions to become a Millionaire!</li>
+        <li>Each question has 4 choices — pick the correct one before time runs out.</li>
+        <li>Time limits scale with difficulty: 20s (Easy), 40s (Medium), 60s (Hard).</li>
+        <li>Difficulty is randomized — a Hard question can appear even at question 1.</li>
+        <li>Answer all 15 questions to become a Millionaire!</li>
       </ul>
+
+      <h2 class="section-title">Lifelines (one use each)</h2>
+      <dl class="lifeline-list">
+        <div class="lifeline-row">
+          <dt>50/50</dt>
+          <dd>Removes 2 of the 3 wrong choices, leaving you with two options.</dd>
+        </div>
+        <div class="lifeline-row">
+          <dt>Hint Rescue</dt>
+          <dd>Reveals a subtle clue about the correct answer — never the answer itself.</dd>
+        </div>
+        <div class="lifeline-row">
+          <dt>Answer Boost</dt>
+          <dd>Only works on Hard questions. Arm it, then answer that Hard question correctly to skip the next question entirely.</dd>
+        </div>
+      </dl>
+
       <button id="start-btn" class="btn primary">Play</button>
     </div>
   </section>
@@ -35,8 +52,11 @@
       <div class="game-main">
         <div class="top-bar">
           <span id="difficulty-badge" class="badge">EASY</span>
+          <span id="timer-display" class="timer">⏱ 20</span>
           <div class="top-bar-right">
-            <button id="lifeline-btn" class="btn lifeline">50/50</button>
+            <button id="fifty-fifty-btn" class="btn lifeline" title="Remove 2 wrong choices">50/50</button>
+            <button id="hint-btn" class="btn lifeline hint" title="Get a subtle hint">💡 Hint</button>
+            <button id="answer-boost-btn" class="btn lifeline boost" title="Only usable on Hard questions" disabled>🚀 Boost</button>
             <button id="mid-restart-btn" class="btn restart-mid">Restart</button>
           </div>
         </div>
@@ -44,6 +64,8 @@
         <div class="question-card">
           <p id="question-text">Question text goes here</p>
         </div>
+
+        <p id="hint-box" class="hint-box"></p>
 
         <div class="choices" id="choices">
           <!-- 4 choice buttons filled by JS -->
