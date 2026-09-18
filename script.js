@@ -245,11 +245,11 @@ function endGame(won) {
   const wonAmount = won ? MONEY_LADDER[MONEY_LADDER.length - 1] : (currentIndex > 0 ? MONEY_LADDER[currentIndex - 1] : 0);
 
   if (won) {
-    endTitle.textContent = '🎉 You are a Millionaire!';
-    endMessage.textContent = 'You answered every question correctly!';
+    endTitle.textContent = '👑 Hail, The Quest Champion!';
+    endMessage.textContent = 'A fortune fit for a monarch awaits thee!';
   } else {
-    endTitle.textContent = '💀 Game Over';
-    endMessage.textContent = 'That answer was incorrect. Better luck next time!';
+    endTitle.textContent = '🛌 The Quest Has Ended';
+    endMessage.textContent = 'Return when thy wits are sharper, brave soul.';
   }
 
   finalAmount.textContent = formatMoney(wonAmount);
