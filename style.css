@@ -38,6 +38,11 @@ body {
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.35), inset 0 0 20px rgba(90, 50, 10, 0.15);
 }
 
+/* Home/start screen only: 50% transparent panel */
+#start-screen .panel {
+  background: linear-gradient(180deg, rgba(246, 223, 174, 0.75) 0%, rgba(236, 197, 132, 0.5) 100%);
+}
+
 h1 {
   color: #5a3416;
   font-size: clamp(1.4rem, 5vw, 2.2rem);
@@ -373,4 +378,14 @@ h1 {
   color: #7a4a1a;
   font-weight: 800;
   margin: 16px 0 24px 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("forestbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
