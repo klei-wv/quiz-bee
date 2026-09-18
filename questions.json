@@ -1,59 +1,2582 @@
 [
-  { "id": 1, "question": "Which country has the most natural lakes in the world?", "choices": ["Russia", "Canada", "Finland", "USA"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 2, "question": "What is the only mammal capable of true, sustained flight?", "choices": ["Flying squirrel", "Bat", "Sugar glider", "Colugo"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 3, "question": "Which body organ produces insulin?", "choices": ["Liver", "Kidney", "Pancreas", "Spleen"], "correctIndex": 2, "difficulty": "easy" },
-  { "id": 4, "question": "What is the term for a baby kangaroo?", "choices": ["Cub", "Joey", "Kid", "Fawn"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 5, "question": "Which country is home to the Great Barrier Reef?", "choices": ["Indonesia", "Philippines", "Australia", "Thailand"], "correctIndex": 2, "difficulty": "easy" },
-  { "id": 6, "question": "What do you call a shape with five sides?", "choices": ["Hexagon", "Pentagon", "Heptagon", "Octagon"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 7, "question": "Which Philippine island is known for the 'Chocolate Hills'?", "choices": ["Cebu", "Palawan", "Bohol", "Siquijor"], "correctIndex": 2, "difficulty": "easy" },
-  { "id": 8, "question": "What is the main gas found in the Sun that fuels nuclear fusion?", "choices": ["Oxygen", "Hydrogen", "Helium", "Carbon"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 9, "question": "Which sport uses the terms 'love' and 'deuce'?", "choices": ["Badminton", "Tennis", "Table Tennis", "Volleyball"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 10, "question": "What is the tallest species of bird in the world?", "choices": ["Emu", "Ostrich", "Crane", "Condor"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 11, "question": "Which country is credited with inventing the game of chess?", "choices": ["China", "Persia", "India", "Egypt"], "correctIndex": 2, "difficulty": "easy" },
-  { "id": 12, "question": "What is the name of the Filipino martial art using sticks and blades?", "choices": ["Karate", "Arnis", "Judo", "Taekwondo"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 13, "question": "Which planet spins almost on its side relative to its orbit?", "choices": ["Neptune", "Saturn", "Uranus", "Venus"], "correctIndex": 2, "difficulty": "easy" },
-  { "id": 14, "question": "What is the collective name for a group of lions?", "choices": ["Pack", "Pride", "Herd", "Troop"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 15, "question": "Which sour fruit is traditionally used in Filipino 'sinigang'?", "choices": ["Calamansi", "Tamarind", "Guava", "Kamias"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 16, "question": "What is the name of Earth's atmospheric layer where weather occurs?", "choices": ["Stratosphere", "Troposphere", "Mesosphere", "Thermosphere"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 17, "question": "Which of these is NOT a primary color of light (RGB)?", "choices": ["Red", "Green", "Yellow", "Blue"], "correctIndex": 2, "difficulty": "easy" },
-  { "id": 18, "question": "What is the largest species of big cat in the world?", "choices": ["Lion", "Tiger", "Jaguar", "Leopard"], "correctIndex": 1, "difficulty": "easy" },
-  { "id": 19, "question": "Which Philippine dish is traditionally cooked inside a bamboo tube over fire?", "choices": ["Bicol Express", "Pinaputok", "Binalot", "Suman"], "correctIndex": 3, "difficulty": "easy" },
-  { "id": 20, "question": "What do you call a word that reads the same forwards and backwards?", "choices": ["Acronym", "Palindrome", "Anagram", "Homophone"], "correctIndex": 1, "difficulty": "easy" },
-
-  { "id": 21, "question": "Which country consists of over 17,000 islands, more than the Philippines?", "choices": ["Malaysia", "Indonesia", "Japan", "Fiji"], "correctIndex": 1, "difficulty": "medium" },
-  { "id": 22, "question": "In Greek mythology, who is the goddess of wisdom and strategic warfare?", "choices": ["Hera", "Aphrodite", "Athena", "Artemis"], "correctIndex": 2, "difficulty": "medium" },
-  { "id": 23, "question": "What is the (ironic) term for a fear of long words?", "choices": ["Logophobia", "Sesquipedalophobia", "Verbophobia", "Glossophobia"], "correctIndex": 1, "difficulty": "medium" },
-  { "id": 24, "question": "Which Philippine hero wrote the novel 'El Filibusterismo'?", "choices": ["Andres Bonifacio", "Jose Rizal", "Marcelo del Pilar", "Emilio Aguinaldo"], "correctIndex": 1, "difficulty": "medium" },
-  { "id": 25, "question": "What type of animal is a 'quokka', famous for its smiling face?", "choices": ["Rodent", "Marsupial", "Primate", "Reptile"], "correctIndex": 1, "difficulty": "medium" },
-  { "id": 26, "question": "Which country gifted the Statue of Liberty to the United States?", "choices": ["United Kingdom", "Spain", "France", "Netherlands"], "correctIndex": 2, "difficulty": "medium" },
-  { "id": 27, "question": "In computing, what does the acronym 'RAM' stand for?", "choices": ["Random Access Memory", "Read Access Module", "Rapid Application Method", "Runtime Allocation Memory"], "correctIndex": 0, "difficulty": "medium" },
-  { "id": 28, "question": "Which Philippine volcano is known for its near-perfect cone shape?", "choices": ["Taal", "Pinatubo", "Mayon", "Kanlaon"], "correctIndex": 2, "difficulty": "medium" },
-  { "id": 29, "question": "What is the study of fungi called?", "choices": ["Botany", "Mycology", "Entomology", "Herpetology"], "correctIndex": 1, "difficulty": "medium" },
-  { "id": 30, "question": "Which ancient wonder stood in the city of Alexandria, Egypt?", "choices": ["Hanging Gardens", "Colossus of Rhodes", "Lighthouse of Alexandria", "Temple of Artemis"], "correctIndex": 2, "difficulty": "medium" },
-  { "id": 31, "question": "What is the currency of Vietnam called?", "choices": ["Baht", "Ringgit", "Dong", "Kip"], "correctIndex": 2, "difficulty": "medium" },
-  { "id": 32, "question": "Which part of a plant primarily conducts photosynthesis?", "choices": ["Root", "Stem", "Leaf", "Flower"], "correctIndex": 2, "difficulty": "medium" },
-  { "id": 33, "question": "Who directed the classic Filipino film 'Himala' (1982)?", "choices": ["Lino Brocka", "Ishmael Bernal", "Mike de Leon", "Gerardo de Leon"], "correctIndex": 1, "difficulty": "medium" },
-  { "id": 34, "question": "What is the process called by which caterpillars become butterflies?", "choices": ["Mitosis", "Metamorphosis", "Pollination", "Germination"], "correctIndex": 1, "difficulty": "medium" },
-  { "id": 35, "question": "Which programming concept refers to a function calling itself?", "choices": ["Iteration", "Recursion", "Looping", "Inheritance"], "correctIndex": 1, "difficulty": "medium" },
-  { "id": 36, "question": "Which sea separates the Philippines from Malaysia's Sabah region?", "choices": ["Sulu Sea", "Celebes Sea", "South China Sea", "Philippine Sea"], "correctIndex": 0, "difficulty": "medium" },
-  { "id": 37, "question": "What is the name of Saturn's largest moon?", "choices": ["Europa", "Titan", "Io", "Callisto"], "correctIndex": 1, "difficulty": "medium" },
-  { "id": 38, "question": "Which country is credited with inventing paper money?", "choices": ["India", "China", "Egypt", "Greece"], "correctIndex": 1, "difficulty": "medium" },
-  { "id": 39, "question": "In HTTP, which status code indicates a successful request?", "choices": ["404", "500", "200", "301"], "correctIndex": 2, "difficulty": "medium" },
-  { "id": 40, "question": "What is the traditional Filipino woven textile from Iloilo called?", "choices": ["T'nalak", "Piña", "Hablon", "Inabel"], "correctIndex": 2, "difficulty": "medium" },
-
-  { "id": 41, "question": "What is the only country with a non-rectangular national flag?", "choices": ["Bhutan", "Nepal", "Switzerland", "Mongolia"], "correctIndex": 1, "difficulty": "hard" },
-  { "id": 42, "question": "Which Filipino scientist is known for a low-cost incubator made from bottles?", "choices": ["Fe del Mundo", "Maria Orosa", "Josefino Comiso", "Angel Alcala"], "correctIndex": 0, "difficulty": "hard" },
-  { "id": 43, "question": "In chemistry, which letters never appear as an element's chemical symbol?", "choices": ["Q only", "J only", "X only", "Both Q and J"], "correctIndex": 3, "difficulty": "hard" },
-  { "id": 44, "question": "What is the term for a group of jellyfish?", "choices": ["A raft", "A bloom", "A pod", "A swarm"], "correctIndex": 1, "difficulty": "hard" },
-  { "id": 45, "question": "The pre-colonial Philippine script 'Baybayin' is technically what kind of writing system?", "choices": ["An alphabet", "A syllabary", "A logography", "A numeral system"], "correctIndex": 1, "difficulty": "hard" },
-  { "id": 46, "question": "Which strait separates Luzon and the Visayas from Mindanao?", "choices": ["Surigao Strait", "San Bernardino Strait", "Mindoro Strait", "Ticao Pass"], "correctIndex": 0, "difficulty": "hard" },
-  { "id": 47, "question": "Which sorting algorithm has an average time complexity of O(n log n) and uses a 'pivot' element?", "choices": ["Bubble Sort", "Quick Sort", "Insertion Sort", "Selection Sort"], "correctIndex": 1, "difficulty": "hard" },
-  { "id": 48, "question": "What is the rarest naturally occurring element in Earth's crust?", "choices": ["Francium", "Astatine", "Promethium", "Technetium"], "correctIndex": 1, "difficulty": "hard" },
-  { "id": 49, "question": "Which Filipino term refers to the pre-colonial system of debt bondage?", "choices": ["Bayanihan", "Alipin", "Datu", "Barangay"], "correctIndex": 1, "difficulty": "hard" },
-  { "id": 50, "question": "What is the name of the deepest known part of the Philippine Trench?", "choices": ["Emden Deep", "Galathea Depth", "Challenger Deep", "Sirena Deep"], "correctIndex": 0, "difficulty": "hard" },
-  { "id": 51, "question": "In music theory, what is the interval of 7 semitones between two notes called?", "choices": ["Major sixth", "Perfect fifth", "Minor seventh", "Perfect fourth"], "correctIndex": 1, "difficulty": "hard" },
-  { "id": 52, "question": "The epic 'Ibong Adarna' is most commonly attributed to which writer?", "choices": ["Jose Corazon de Jesus", "Jose de la Cruz (Huseng Sisiw)", "Francisco Balagtas", "Lope K. Santos"], "correctIndex": 1, "difficulty": "hard" },
-  { "id": 53, "question": "What term describes a computer program that runs forever without terminating?", "choices": ["Deadlock", "Infinite loop", "Stack overflow", "Race condition"], "correctIndex": 1, "difficulty": "hard" },
-  { "id": 54, "question": "Which Philippine mountain range is the longest in the country?", "choices": ["Cordillera Central", "Sierra Madre", "Zambales Mountains", "Diwata Mountains"], "correctIndex": 1, "difficulty": "hard" },
-  { "id": 55, "question": "What is the technical term for the fear of the number 13?", "choices": ["Triskaidekaphobia", "Paraskevidekatriaphobia", "Tridecaphobia", "Numerophobia"], "correctIndex": 0, "difficulty": "hard" }
+  {
+    "id": 1,
+    "question": "Which country has the most natural lakes in the world?",
+    "choices": [
+      "Russia",
+      "Canada",
+      "Finland",
+      "USA"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "question": "What is the only mammal capable of true, sustained flight?",
+    "choices": [
+      "Flying squirrel",
+      "Bat",
+      "Sugar glider",
+      "Colugo"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "question": "Which body organ produces insulin?",
+    "choices": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "question": "What is the term for a baby kangaroo?",
+    "choices": [
+      "Cub",
+      "Joey",
+      "Kid",
+      "Fawn"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "question": "Which country is home to the Great Barrier Reef?",
+    "choices": [
+      "Indonesia",
+      "Philippines",
+      "Australia",
+      "Thailand"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "question": "What do you call a shape with five sides?",
+    "choices": [
+      "Hexagon",
+      "Pentagon",
+      "Heptagon",
+      "Octagon"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "question": "Which Philippine island is known for the 'Chocolate Hills'?",
+    "choices": [
+      "Cebu",
+      "Palawan",
+      "Bohol",
+      "Siquijor"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "question": "What is the main gas found in the Sun that fuels nuclear fusion?",
+    "choices": [
+      "Oxygen",
+      "Hydrogen",
+      "Helium",
+      "Carbon"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "question": "Which sport uses the terms 'love' and 'deuce'?",
+    "choices": [
+      "Badminton",
+      "Tennis",
+      "Table Tennis",
+      "Volleyball"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "question": "What is the tallest species of bird in the world?",
+    "choices": [
+      "Emu",
+      "Ostrich",
+      "Crane",
+      "Condor"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "question": "Which country is credited with inventing the game of chess?",
+    "choices": [
+      "China",
+      "Persia",
+      "India",
+      "Egypt"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "question": "What is the name of the Filipino martial art using sticks and blades?",
+    "choices": [
+      "Karate",
+      "Arnis",
+      "Judo",
+      "Taekwondo"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "question": "Which planet spins almost on its side relative to its orbit?",
+    "choices": [
+      "Neptune",
+      "Saturn",
+      "Uranus",
+      "Venus"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "question": "What is the collective name for a group of lions?",
+    "choices": [
+      "Pack",
+      "Pride",
+      "Herd",
+      "Troop"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "question": "Which sour fruit is traditionally used in Filipino 'sinigang'?",
+    "choices": [
+      "Calamansi",
+      "Tamarind",
+      "Guava",
+      "Kamias"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "question": "What is the name of Earth's atmospheric layer where weather occurs?",
+    "choices": [
+      "Stratosphere",
+      "Troposphere",
+      "Mesosphere",
+      "Thermosphere"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 17,
+    "question": "Which of these is NOT a primary color of light (RGB)?",
+    "choices": [
+      "Red",
+      "Green",
+      "Yellow",
+      "Blue"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 18,
+    "question": "What is the largest species of big cat in the world?",
+    "choices": [
+      "Lion",
+      "Tiger",
+      "Jaguar",
+      "Leopard"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 19,
+    "question": "Which Philippine dish is traditionally cooked inside a bamboo tube over fire?",
+    "choices": [
+      "Bicol Express",
+      "Pinaputok",
+      "Binalot",
+      "Suman"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": 20,
+    "question": "What do you call a word that reads the same forwards and backwards?",
+    "choices": [
+      "Acronym",
+      "Palindrome",
+      "Anagram",
+      "Homophone"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 21,
+    "question": "Which country consists of over 17,000 islands, more than the Philippines?",
+    "choices": [
+      "Malaysia",
+      "Indonesia",
+      "Japan",
+      "Fiji"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "question": "In Greek mythology, who is the goddess of wisdom and strategic warfare?",
+    "choices": [
+      "Hera",
+      "Aphrodite",
+      "Athena",
+      "Artemis"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "question": "What is the (ironic) term for a fear of long words?",
+    "choices": [
+      "Logophobia",
+      "Sesquipedalophobia",
+      "Verbophobia",
+      "Glossophobia"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "question": "Which Philippine hero wrote the novel 'El Filibusterismo'?",
+    "choices": [
+      "Andres Bonifacio",
+      "Jose Rizal",
+      "Marcelo del Pilar",
+      "Emilio Aguinaldo"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "question": "What type of animal is a 'quokka', famous for its smiling face?",
+    "choices": [
+      "Rodent",
+      "Marsupial",
+      "Primate",
+      "Reptile"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "question": "Which country gifted the Statue of Liberty to the United States?",
+    "choices": [
+      "United Kingdom",
+      "Spain",
+      "France",
+      "Netherlands"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "question": "In computing, what does the acronym 'RAM' stand for?",
+    "choices": [
+      "Random Access Memory",
+      "Read Access Module",
+      "Rapid Application Method",
+      "Runtime Allocation Memory"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 28,
+    "question": "Which Philippine volcano is known for its near-perfect cone shape?",
+    "choices": [
+      "Taal",
+      "Pinatubo",
+      "Mayon",
+      "Kanlaon"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "question": "What is the study of fungi called?",
+    "choices": [
+      "Botany",
+      "Mycology",
+      "Entomology",
+      "Herpetology"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "question": "Which ancient wonder stood in the city of Alexandria, Egypt?",
+    "choices": [
+      "Hanging Gardens",
+      "Colossus of Rhodes",
+      "Lighthouse of Alexandria",
+      "Temple of Artemis"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 31,
+    "question": "What is the currency of Vietnam called?",
+    "choices": [
+      "Baht",
+      "Ringgit",
+      "Dong",
+      "Kip"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "question": "Which part of a plant primarily conducts photosynthesis?",
+    "choices": [
+      "Root",
+      "Stem",
+      "Leaf",
+      "Flower"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "question": "Who directed the classic Filipino film 'Himala' (1982)?",
+    "choices": [
+      "Lino Brocka",
+      "Ishmael Bernal",
+      "Mike de Leon",
+      "Gerardo de Leon"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 34,
+    "question": "What is the process called by which caterpillars become butterflies?",
+    "choices": [
+      "Mitosis",
+      "Metamorphosis",
+      "Pollination",
+      "Germination"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 35,
+    "question": "Which programming concept refers to a function calling itself?",
+    "choices": [
+      "Iteration",
+      "Recursion",
+      "Looping",
+      "Inheritance"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 36,
+    "question": "Which sea separates the Philippines from Malaysia's Sabah region?",
+    "choices": [
+      "Sulu Sea",
+      "Celebes Sea",
+      "South China Sea",
+      "Philippine Sea"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 37,
+    "question": "What is the name of Saturn's largest moon?",
+    "choices": [
+      "Europa",
+      "Titan",
+      "Io",
+      "Callisto"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 38,
+    "question": "Which country is credited with inventing paper money?",
+    "choices": [
+      "India",
+      "China",
+      "Egypt",
+      "Greece"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 39,
+    "question": "In HTTP, which status code indicates a successful request?",
+    "choices": [
+      "404",
+      "500",
+      "200",
+      "301"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "question": "What is the traditional Filipino woven textile from Iloilo called?",
+    "choices": [
+      "T'nalak",
+      "Pi\u00f1a",
+      "Hablon",
+      "Inabel"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 41,
+    "question": "What is the only country with a non-rectangular national flag?",
+    "choices": [
+      "Bhutan",
+      "Nepal",
+      "Switzerland",
+      "Mongolia"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 42,
+    "question": "Which Filipino scientist is known for a low-cost incubator made from bottles?",
+    "choices": [
+      "Fe del Mundo",
+      "Maria Orosa",
+      "Josefino Comiso",
+      "Angel Alcala"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": 43,
+    "question": "In chemistry, which letters never appear as an element's chemical symbol?",
+    "choices": [
+      "Q only",
+      "J only",
+      "X only",
+      "Both Q and J"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard"
+  },
+  {
+    "id": 44,
+    "question": "What is the term for a group of jellyfish?",
+    "choices": [
+      "A raft",
+      "A bloom",
+      "A pod",
+      "A swarm"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 45,
+    "question": "The pre-colonial Philippine script 'Baybayin' is technically what kind of writing system?",
+    "choices": [
+      "An alphabet",
+      "A syllabary",
+      "A logography",
+      "A numeral system"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 46,
+    "question": "Which strait separates Luzon and the Visayas from Mindanao?",
+    "choices": [
+      "Surigao Strait",
+      "San Bernardino Strait",
+      "Mindoro Strait",
+      "Ticao Pass"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": 47,
+    "question": "Which sorting algorithm has an average time complexity of O(n log n) and uses a 'pivot' element?",
+    "choices": [
+      "Bubble Sort",
+      "Quick Sort",
+      "Insertion Sort",
+      "Selection Sort"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 48,
+    "question": "What is the rarest naturally occurring element in Earth's crust?",
+    "choices": [
+      "Francium",
+      "Astatine",
+      "Promethium",
+      "Technetium"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 49,
+    "question": "Which Filipino term refers to the pre-colonial system of debt bondage?",
+    "choices": [
+      "Bayanihan",
+      "Alipin",
+      "Datu",
+      "Barangay"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 50,
+    "question": "What is the name of the deepest known part of the Philippine Trench?",
+    "choices": [
+      "Emden Deep",
+      "Galathea Depth",
+      "Challenger Deep",
+      "Sirena Deep"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": 51,
+    "question": "In music theory, what is the interval of 7 semitones between two notes called?",
+    "choices": [
+      "Major sixth",
+      "Perfect fifth",
+      "Minor seventh",
+      "Perfect fourth"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 52,
+    "question": "The epic 'Ibong Adarna' is most commonly attributed to which writer?",
+    "choices": [
+      "Jose Corazon de Jesus",
+      "Jose de la Cruz (Huseng Sisiw)",
+      "Francisco Balagtas",
+      "Lope K. Santos"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 53,
+    "question": "What term describes a computer program that runs forever without terminating?",
+    "choices": [
+      "Deadlock",
+      "Infinite loop",
+      "Stack overflow",
+      "Race condition"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 54,
+    "question": "Which Philippine mountain range is the longest in the country?",
+    "choices": [
+      "Cordillera Central",
+      "Sierra Madre",
+      "Zambales Mountains",
+      "Diwata Mountains"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 55,
+    "question": "What is the technical term for the fear of the number 13?",
+    "choices": [
+      "Triskaidekaphobia",
+      "Paraskevidekatriaphobia",
+      "Tridecaphobia",
+      "Numerophobia"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": 56,
+    "question": "Which war was fought between the North and South regions of the United States?",
+    "choices": [
+      "World War I",
+      "World War II",
+      "American Civil War",
+      "Cold War"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 57,
+    "question": "In which year did World War II end?",
+    "choices": [
+      "1943",
+      "1944",
+      "1945",
+      "1946"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 58,
+    "question": "Who was the first President of the United States?",
+    "choices": [
+      "Thomas Jefferson",
+      "George Washington",
+      "Abraham Lincoln",
+      "John Adams"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 59,
+    "question": "The Great Wall was built to protect which ancient country from invasions?",
+    "choices": [
+      "Japan",
+      "China",
+      "Mongolia",
+      "Korea"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 60,
+    "question": "In which year did World War I begin?",
+    "choices": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 61,
+    "question": "Which country dropped atomic bombs on Hiroshima and Nagasaki?",
+    "choices": [
+      "Soviet Union",
+      "United Kingdom",
+      "United States",
+      "Germany"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 62,
+    "question": "Who founded the Katipunan and led the start of the Philippine Revolution?",
+    "choices": [
+      "Jose Rizal",
+      "Andres Bonifacio",
+      "Emilio Aguinaldo",
+      "Apolinario Mabini"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 63,
+    "question": "Which treaty formally ended World War I in 1919?",
+    "choices": [
+      "Treaty of Paris",
+      "Treaty of Versailles",
+      "Treaty of Ghent",
+      "Treaty of Tordesillas"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 64,
+    "question": "What was the name of the wall that divided East and West Berlin during the Cold War?",
+    "choices": [
+      "Berlin Wall",
+      "Iron Curtain",
+      "Maginot Line",
+      "Great Wall"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 65,
+    "question": "Who was known as the 'Brains of the Katipunan'?",
+    "choices": [
+      "Emilio Jacinto",
+      "Gregorio del Pilar",
+      "Antonio Luna",
+      "Apolinario Mabini"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 66,
+    "question": "Which modern country was formerly known as Persia?",
+    "choices": [
+      "Iraq",
+      "Iran",
+      "Syria",
+      "Turkey"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 67,
+    "question": "In which century did the Renaissance begin?",
+    "choices": [
+      "12th century",
+      "13th century",
+      "14th century",
+      "16th century"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 68,
+    "question": "Which WWI alliance opposed the Triple Entente?",
+    "choices": [
+      "Triple Alliance",
+      "Warsaw Pact",
+      "Axis Powers",
+      "Allied Powers"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 69,
+    "question": "Which WWII naval battle is considered a major turning point in the Pacific theater?",
+    "choices": [
+      "Battle of Coral Sea",
+      "Battle of Midway",
+      "Battle of Leyte Gulf",
+      "Battle of Okinawa"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 70,
+    "question": "In what year did the Berlin Wall fall?",
+    "choices": [
+      "1987",
+      "1989",
+      "1991",
+      "1993"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 71,
+    "question": "Which Philippine WWII battle is commemorated as 'Araw ng Kagitingan' (Day of Valor)?",
+    "choices": [
+      "Battle of Manila",
+      "Battle of Bataan",
+      "Battle of Corregidor",
+      "Battle of Leyte"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 72,
+    "question": "What was the code name for the Allied invasion of Normandy in 1944?",
+    "choices": [
+      "Operation Torch",
+      "Operation Overlord",
+      "Operation Market Garden",
+      "Operation Neptune"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 73,
+    "question": "Which empire was ruled by Genghis Khan?",
+    "choices": [
+      "Ottoman Empire",
+      "Mongol Empire",
+      "Persian Empire",
+      "Byzantine Empire"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 74,
+    "question": "What was the name of the 1884-85 agreement that divided colonial Africa among European powers?",
+    "choices": [
+      "Treaty of Berlin",
+      "Berlin Conference",
+      "Congress of Vienna",
+      "Treaty of Brussels"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 75,
+    "question": "Which mountain pass battle marked one of the last major stands of Filipino forces in the Philippine-American War?",
+    "choices": [
+      "Battle of Manila Bay",
+      "Battle of Tirad Pass",
+      "Battle of Balangiga",
+      "Battle of Zapote Bridge"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 76,
+    "question": "What is H2O commonly known as?",
+    "choices": [
+      "Salt",
+      "Water",
+      "Oxygen",
+      "Sugar"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 77,
+    "question": "Which planet is closest to the Sun?",
+    "choices": [
+      "Venus",
+      "Earth",
+      "Mercury",
+      "Mars"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 78,
+    "question": "What is the process by which plants make their own food using sunlight called?",
+    "choices": [
+      "Respiration",
+      "Digestion",
+      "Photosynthesis",
+      "Fermentation"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 79,
+    "question": "Which sense organ do humans primarily use to see?",
+    "choices": [
+      "Ears",
+      "Nose",
+      "Eyes",
+      "Skin"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 80,
+    "question": "What is the chemical symbol for gold?",
+    "choices": [
+      "Ag",
+      "Au",
+      "Gd",
+      "Go"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 81,
+    "question": "How many bones are in an adult human body?",
+    "choices": [
+      "186",
+      "196",
+      "206",
+      "216"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 82,
+    "question": "Which gas do plants release during photosynthesis?",
+    "choices": [
+      "Carbon Dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 83,
+    "question": "What is the scientific study of earthquakes called?",
+    "choices": [
+      "Geology",
+      "Seismology",
+      "Volcanology",
+      "Meteorology"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 84,
+    "question": "Which vitamin is produced when skin is exposed to sunlight?",
+    "choices": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin K"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 85,
+    "question": "What is the term for animals that are mainly active at night?",
+    "choices": [
+      "Diurnal",
+      "Nocturnal",
+      "Crepuscular",
+      "Hibernal"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 86,
+    "question": "Which blood cells are mainly responsible for fighting infection?",
+    "choices": [
+      "Red blood cells",
+      "White blood cells",
+      "Platelets",
+      "Plasma cells"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 87,
+    "question": "What is the largest organ in the human body?",
+    "choices": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Lungs"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 88,
+    "question": "Which scientist developed the theory of evolution by natural selection?",
+    "choices": [
+      "Gregor Mendel",
+      "Charles Darwin",
+      "Louis Pasteur",
+      "Isaac Newton"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 89,
+    "question": "What is the process called when a liquid turns into a gas?",
+    "choices": [
+      "Condensation",
+      "Evaporation",
+      "Sublimation",
+      "Precipitation"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 90,
+    "question": "Which plant cell organelle captures sunlight for photosynthesis?",
+    "choices": [
+      "Mitochondria",
+      "Nucleus",
+      "Chloroplast",
+      "Ribosome"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 91,
+    "question": "Which element has the atomic number 1?",
+    "choices": [
+      "Helium",
+      "Hydrogen",
+      "Lithium",
+      "Carbon"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 92,
+    "question": "What is the study of heredity and genetic variation called?",
+    "choices": [
+      "Genetics",
+      "Ecology",
+      "Physiology",
+      "Taxonomy"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": 93,
+    "question": "Which part of the brain is mainly responsible for balance and coordination?",
+    "choices": [
+      "Cerebrum",
+      "Cerebellum",
+      "Medulla",
+      "Hypothalamus"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 94,
+    "question": "What is the term for light bending as it passes through different mediums?",
+    "choices": [
+      "Reflection",
+      "Refraction",
+      "Diffraction",
+      "Dispersion"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 95,
+    "question": "Which gas makes up the largest percentage of Earth's atmosphere?",
+    "choices": [
+      "Oxygen",
+      "Carbon Dioxide",
+      "Nitrogen",
+      "Argon"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 96,
+    "question": "What is the capital of France?",
+    "choices": [
+      "Berlin",
+      "Madrid",
+      "Paris",
+      "Rome"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 97,
+    "question": "On which continent is the Sahara Desert located?",
+    "choices": [
+      "Asia",
+      "Africa",
+      "Australia",
+      "South America"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 98,
+    "question": "What is the smallest country in the world?",
+    "choices": [
+      "Monaco",
+      "San Marino",
+      "Vatican City",
+      "Liechtenstein"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 99,
+    "question": "Which country is famously shaped like a boot?",
+    "choices": [
+      "Spain",
+      "Italy",
+      "Greece",
+      "Portugal"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 100,
+    "question": "What is the capital of Japan?",
+    "choices": [
+      "Osaka",
+      "Kyoto",
+      "Tokyo",
+      "Yokohama"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 101,
+    "question": "Which river flows through Egypt?",
+    "choices": [
+      "Amazon River",
+      "Nile River",
+      "Congo River",
+      "Niger River"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 102,
+    "question": "What is the largest country in the world by land area?",
+    "choices": [
+      "Canada",
+      "China",
+      "USA",
+      "Russia"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": 103,
+    "question": "Which mountain range is often considered the natural border between Europe and Asia?",
+    "choices": [
+      "Alps",
+      "Ural Mountains",
+      "Andes",
+      "Himalayas"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 104,
+    "question": "What is the capital of Canada?",
+    "choices": [
+      "Toronto",
+      "Vancouver",
+      "Ottawa",
+      "Montreal"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 105,
+    "question": "Which strait separates Europe and Africa at its narrowest point?",
+    "choices": [
+      "Strait of Hormuz",
+      "Strait of Gibraltar",
+      "Bosphorus Strait",
+      "Strait of Malacca"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 106,
+    "question": "What is the longest mountain range in the world?",
+    "choices": [
+      "Rocky Mountains",
+      "Himalayas",
+      "Andes",
+      "Alps"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 107,
+    "question": "Which country has the most time zones due to its overseas territories?",
+    "choices": [
+      "Russia",
+      "USA",
+      "France",
+      "China"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 108,
+    "question": "What is the capital of Australia?",
+    "choices": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Perth"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 109,
+    "question": "Which is the saltiest body of water in the world?",
+    "choices": [
+      "Red Sea",
+      "Dead Sea",
+      "Caspian Sea",
+      "Black Sea"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 110,
+    "question": "What is the capital of Kazakhstan?",
+    "choices": [
+      "Almaty",
+      "Astana",
+      "Bishkek",
+      "Tashkent"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 111,
+    "question": "Which African country was never formally colonized by a European power?",
+    "choices": [
+      "Kenya",
+      "Ethiopia",
+      "Nigeria",
+      "Ghana"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 112,
+    "question": "What is the driest desert in the world, excluding polar deserts?",
+    "choices": [
+      "Sahara Desert",
+      "Gobi Desert",
+      "Atacama Desert",
+      "Namib Desert"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 113,
+    "question": "Which two countries share the longest international border in the world?",
+    "choices": [
+      "Russia and China",
+      "USA and Mexico",
+      "Canada and USA",
+      "Brazil and Argentina"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 114,
+    "question": "What is the name of the tectonic zone encircling the Pacific Ocean, known for frequent quakes and volcanoes?",
+    "choices": [
+      "Great Rift Valley",
+      "Ring of Fire",
+      "Continental Divide",
+      "Mid-Atlantic Ridge"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 115,
+    "question": "Which country has the most islands in the world?",
+    "choices": [
+      "Indonesia",
+      "Philippines",
+      "Sweden",
+      "Norway"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 116,
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "choices": [
+      "Charles Dickens",
+      "William Shakespeare",
+      "Mark Twain",
+      "Jane Austen"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 117,
+    "question": "Which musical instrument has black and white keys?",
+    "choices": [
+      "Violin",
+      "Guitar",
+      "Piano",
+      "Flute"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 118,
+    "question": "What is the name of the famous clock tower in London?",
+    "choices": [
+      "Eiffel Tower",
+      "Big Ben",
+      "Leaning Tower",
+      "London Eye"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 119,
+    "question": "Which art movement is Pablo Picasso most associated with?",
+    "choices": [
+      "Impressionism",
+      "Cubism",
+      "Surrealism",
+      "Baroque"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 120,
+    "question": "What do you call a story passed down through generations by word of mouth?",
+    "choices": [
+      "Biography",
+      "Folklore",
+      "Autobiography",
+      "Documentary"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 121,
+    "question": "Which country is known for originating the art of origami?",
+    "choices": [
+      "China",
+      "Korea",
+      "Japan",
+      "Thailand"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 122,
+    "question": "What is the term for a painting of oneself?",
+    "choices": [
+      "Landscape",
+      "Still life",
+      "Self-portrait",
+      "Mural"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 123,
+    "question": "Who composed the 'Ninth Symphony' while completely deaf?",
+    "choices": [
+      "Mozart",
+      "Beethoven",
+      "Bach",
+      "Chopin"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 124,
+    "question": "Which Filipino is often credited as the 'Father of Philippine Komiks'?",
+    "choices": [
+      "Francisco Coching",
+      "Tony Velasquez",
+      "Mars Ravelo",
+      "Larry Alcala"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 125,
+    "question": "What is the term for a 14-line poem, often about love?",
+    "choices": [
+      "Haiku",
+      "Sonnet",
+      "Limerick",
+      "Ballad"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 126,
+    "question": "Which Renaissance artist painted the ceiling of the Sistine Chapel?",
+    "choices": [
+      "Raphael",
+      "Donatello",
+      "Michelangelo",
+      "Leonardo da Vinci"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 127,
+    "question": "Which Philippine epic from the Ilocos region is considered a national literary treasure?",
+    "choices": [
+      "Florante at Laura",
+      "Biag ni Lam-ang",
+      "Ibong Adarna",
+      "Urbana at Feliza"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 128,
+    "question": "Which 17th-century art period is known for drama and grandeur, exemplified by Caravaggio?",
+    "choices": [
+      "Rococo",
+      "Baroque",
+      "Neoclassicism",
+      "Romanticism"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 129,
+    "question": "Which traditional Japanese theater art form uses elaborate masks and slow, stylized movement?",
+    "choices": [
+      "Kabuki",
+      "Noh theater",
+      "Bunraku",
+      "Rakugo"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 130,
+    "question": "Which Filipino novel is credited with inspiring the Philippine Revolution against Spain?",
+    "choices": [
+      "El Filibusterismo",
+      "Noli Me Tangere",
+      "Ibong Adarna",
+      "Mga Ibong Mandaragit"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 131,
+    "question": "Which painting technique uses dabs of pure color to capture the impression of light, popularized by Monet?",
+    "choices": [
+      "Cubism",
+      "Impressionism",
+      "Pointillism",
+      "Fauvism"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 132,
+    "question": "Which ancient Greek epic tells the story of Odysseus's long journey home?",
+    "choices": [
+      "The Iliad",
+      "The Odyssey",
+      "The Aeneid",
+      "Theogony"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 133,
+    "question": "Which Tchaikovsky ballet features a nutcracker doll that comes to life?",
+    "choices": [
+      "Swan Lake",
+      "Sleeping Beauty",
+      "The Nutcracker",
+      "Giselle"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 134,
+    "question": "Which architectural style is characterized by pointed arches and flying buttresses?",
+    "choices": [
+      "Romanesque",
+      "Gothic",
+      "Baroque",
+      "Byzantine"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 135,
+    "question": "Who sculpted 'The Thinker'?",
+    "choices": [
+      "Michelangelo",
+      "Auguste Rodin",
+      "Donatello",
+      "Gian Lorenzo Bernini"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 136,
+    "question": "What does 'www' stand for?",
+    "choices": [
+      "World Wide Web",
+      "World Web Wide",
+      "Web World Wide",
+      "Wide World Web"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "id": 137,
+    "question": "Which company created the iPhone?",
+    "choices": [
+      "Samsung",
+      "Apple",
+      "Google",
+      "Microsoft"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 138,
+    "question": "What is commonly called the 'brain' of a computer?",
+    "choices": [
+      "RAM",
+      "CPU",
+      "GPU",
+      "SSD"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 139,
+    "question": "Which company owns YouTube?",
+    "choices": [
+      "Microsoft",
+      "Amazon",
+      "Google",
+      "Apple"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 140,
+    "question": "What is the general term for unwanted or harmful software?",
+    "choices": [
+      "Firmware",
+      "Malware",
+      "Freeware",
+      "Shareware"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 141,
+    "question": "Which language is primarily used to structure content on web pages?",
+    "choices": [
+      "CSS",
+      "HTML",
+      "Python",
+      "Java"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 142,
+    "question": "What does 'AI' commonly stand for in tech?",
+    "choices": [
+      "Automated Interface",
+      "Artificial Intelligence",
+      "Applied Informatics",
+      "Advanced Integration"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 143,
+    "question": "Who is widely credited as a founder of Microsoft?",
+    "choices": [
+      "Steve Jobs",
+      "Bill Gates",
+      "Mark Zuckerberg",
+      "Larry Page"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 144,
+    "question": "What does 'URL' stand for?",
+    "choices": [
+      "Uniform Resource Locator",
+      "Universal Reference Link",
+      "United Resource Language",
+      "Unified Redirect Locator"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 145,
+    "question": "Which company developed the Android operating system?",
+    "choices": [
+      "Apple",
+      "Microsoft",
+      "Google",
+      "Samsung"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 146,
+    "question": "What term describes a network of everyday devices, like smart fridges, connected to the internet?",
+    "choices": [
+      "Cloud Computing",
+      "Internet of Things",
+      "Local Area Network",
+      "Blockchain"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 147,
+    "question": "Which language is primarily used for styling the appearance of web pages?",
+    "choices": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 148,
+    "question": "What does 'GPU' stand for?",
+    "choices": [
+      "General Processing Unit",
+      "Graphics Processing Unit",
+      "Global Processing Utility",
+      "Graphic Program Unit"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 149,
+    "question": "What was the name of the first widely popular web browser, released in 1993?",
+    "choices": [
+      "Netscape",
+      "Internet Explorer",
+      "Mosaic",
+      "Safari"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 150,
+    "question": "Who is often credited as the 'father of the World Wide Web'?",
+    "choices": [
+      "Bill Gates",
+      "Tim Berners-Lee",
+      "Steve Wozniak",
+      "Vint Cerf"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 151,
+    "question": "What does 'SQL' stand for?",
+    "choices": [
+      "Sequential Query Language",
+      "Structured Query Language",
+      "System Query Logic",
+      "Standard Query Language"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 152,
+    "question": "Who created the Python programming language?",
+    "choices": [
+      "Dennis Ritchie",
+      "Guido van Rossum",
+      "James Gosling",
+      "Bjarne Stroustrup"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 153,
+    "question": "Which type of malicious program self-replicates and spreads without needing a host file, unlike a virus?",
+    "choices": [
+      "Trojan",
+      "Worm",
+      "Spyware",
+      "Adware"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 154,
+    "question": "Which protocol commonly secures websites, shown by 'https' in the address bar?",
+    "choices": [
+      "FTP",
+      "SSH",
+      "TLS/SSL",
+      "SMTP"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 155,
+    "question": "What does 'API' stand for?",
+    "choices": [
+      "Application Programming Interface",
+      "Automated Program Interaction",
+      "Applied Process Integration",
+      "Application Process Index"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": 156,
+    "question": "How many players are on a basketball team on the court at once?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 157,
+    "question": "In which sport would you perform a slam dunk?",
+    "choices": [
+      "Volleyball",
+      "Basketball",
+      "Badminton",
+      "Tennis"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 158,
+    "question": "What sport is Manny Pacquiao most famous for?",
+    "choices": [
+      "Wrestling",
+      "Boxing",
+      "MMA",
+      "Judo"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 159,
+    "question": "Which country is credited with inventing basketball?",
+    "choices": [
+      "Canada",
+      "United States",
+      "United Kingdom",
+      "France"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 160,
+    "question": "How often are the Summer Olympics held?",
+    "choices": [
+      "Every 2 years",
+      "Every 3 years",
+      "Every 4 years",
+      "Every 5 years"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 161,
+    "question": "Which sport uses a shuttlecock?",
+    "choices": [
+      "Tennis",
+      "Badminton",
+      "Squash",
+      "Table Tennis"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 162,
+    "question": "What is the maximum score possible in a single game of ten-pin bowling?",
+    "choices": [
+      "200",
+      "250",
+      "300",
+      "350"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 163,
+    "question": "Which country has won the most FIFA World Cup titles?",
+    "choices": [
+      "Germany",
+      "Argentina",
+      "Brazil",
+      "Italy"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 164,
+    "question": "In golf, what is the term for finishing one stroke under par on a hole?",
+    "choices": [
+      "Bogey",
+      "Birdie",
+      "Eagle",
+      "Par"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 165,
+    "question": "In which Olympic sport did Hidilyn Diaz win the Philippines' first-ever Olympic gold medal?",
+    "choices": [
+      "Boxing",
+      "Weightlifting",
+      "Swimming",
+      "Athletics"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 166,
+    "question": "How many rings are on the Olympic flag?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 167,
+    "question": "What is a perfect score in gymnastics under the old scoring system?",
+    "choices": [
+      "9.5",
+      "10",
+      "9.9",
+      "100"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 168,
+    "question": "Which country hosted the first modern Olympic Games in 1896?",
+    "choices": [
+      "France",
+      "Greece",
+      "Italy",
+      "United Kingdom"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 169,
+    "question": "In volleyball, how many players from each team are on the court at once?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 170,
+    "question": "Which tennis Grand Slam tournament is played on clay courts?",
+    "choices": [
+      "Wimbledon",
+      "US Open",
+      "French Open",
+      "Australian Open"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 171,
+    "question": "Who holds the record for the most Olympic gold medals of all time?",
+    "choices": [
+      "Usain Bolt",
+      "Michael Phelps",
+      "Carl Lewis",
+      "Mark Spitz"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 172,
+    "question": "What is the golf term for finishing three strokes under par on a single hole?",
+    "choices": [
+      "Eagle",
+      "Birdie",
+      "Albatross",
+      "Condor"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 173,
+    "question": "In which sport is the term 'chukka' used to describe a period of play?",
+    "choices": [
+      "Cricket",
+      "Polo",
+      "Rugby",
+      "Hockey"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 174,
+    "question": "What is the maximum number of clubs a golfer may carry during a round?",
+    "choices": [
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 175,
+    "question": "Which Japanese combat sport, called the 'gentle way,' was created by Jigoro Kano?",
+    "choices": [
+      "Karate",
+      "Judo",
+      "Aikido",
+      "Sumo"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 176,
+    "question": "Which streaming service is known for the show 'Stranger Things'?",
+    "choices": [
+      "Hulu",
+      "Netflix",
+      "Disney+",
+      "HBO Max"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 177,
+    "question": "Who played Iron Man in the Marvel Cinematic Universe films?",
+    "choices": [
+      "Chris Evans",
+      "Chris Hemsworth",
+      "Robert Downey Jr.",
+      "Mark Ruffalo"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 178,
+    "question": "Which animated movie franchise features a green ogre named Shrek?",
+    "choices": [
+      "Shrek",
+      "Madagascar",
+      "Kung Fu Panda",
+      "Ice Age"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "id": 179,
+    "question": "What is the name of the wizarding school in the Harry Potter series?",
+    "choices": [
+      "Hogwarts",
+      "Beauxbatons",
+      "Durmstrang",
+      "Ilvermorny"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "id": 180,
+    "question": "Which short-video social media platform was founded in China?",
+    "choices": [
+      "Instagram",
+      "TikTok",
+      "Snapchat",
+      "Twitter"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 181,
+    "question": "What color is SpongeBob SquarePants?",
+    "choices": [
+      "Orange",
+      "Yellow",
+      "Green",
+      "Pink"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 182,
+    "question": "Which fast-food mascot is a clown?",
+    "choices": [
+      "Colonel Sanders",
+      "Ronald McDonald",
+      "The Burger King",
+      "Wendy"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 183,
+    "question": "Which is one of the longest-running noontime variety shows in Philippine television?",
+    "choices": [
+      "It's Showtime",
+      "Eat Bulaga",
+      "ASAP",
+      "Wowowee"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 184,
+    "question": "Who directed the movie 'Jurassic Park' (1993)?",
+    "choices": [
+      "George Lucas",
+      "James Cameron",
+      "Steven Spielberg",
+      "Ridley Scott"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 185,
+    "question": "Which K-pop group is known for the song 'Dynamite'?",
+    "choices": [
+      "BLACKPINK",
+      "BTS",
+      "EXO",
+      "Stray Kids"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 186,
+    "question": "What is the name of the fictional African country in the movie 'Black Panther'?",
+    "choices": [
+      "Zamunda",
+      "Wakanda",
+      "Genovia",
+      "Latveria"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 187,
+    "question": "Which video game franchise features a plumber named Mario?",
+    "choices": [
+      "Sonic",
+      "Super Mario",
+      "Donkey Kong",
+      "Kirby"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 188,
+    "question": "Which musician is known as the 'King of Pop'?",
+    "choices": [
+      "Elvis Presley",
+      "Michael Jackson",
+      "Prince",
+      "James Brown"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 189,
+    "question": "Which award show, given by AMPAS, honors excellence in the film industry?",
+    "choices": [
+      "Grammy Awards",
+      "Emmy Awards",
+      "Academy Awards",
+      "Golden Globe Awards"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 190,
+    "question": "Which director is known for films like 'Inception' and 'Interstellar'?",
+    "choices": [
+      "Denis Villeneuve",
+      "Christopher Nolan",
+      "David Fincher",
+      "James Cameron"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 191,
+    "question": "What fictional metal makes up Wolverine's claws in Marvel Comics?",
+    "choices": [
+      "Vibranium",
+      "Adamantium",
+      "Carbonadium",
+      "Uru"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 192,
+    "question": "Which Filipino komik superheroine was created by Mars Ravelo?",
+    "choices": [
+      "Lastikman",
+      "Darna",
+      "Captain Barbell",
+      "Zsazsa Zaturnnah"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 193,
+    "question": "What was the first feature-length fully computer-animated film, released in 1995?",
+    "choices": [
+      "Shrek",
+      "Toy Story",
+      "Antz",
+      "A Bug's Life"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 194,
+    "question": "Which major Philippine film festival is held annually every December?",
+    "choices": [
+      "Cinemalaya",
+      "Metro Manila Film Festival",
+      "QCinema",
+      "Cinema One Originals"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 195,
+    "question": "In which decade did color television broadcasts first become publicly available in the United States?",
+    "choices": [
+      "1930s",
+      "1940s",
+      "1950s",
+      "1960s"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 196,
+    "question": "What is the national language of the Philippines?",
+    "choices": [
+      "English",
+      "Filipino",
+      "Spanish",
+      "Cebuano"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 197,
+    "question": "Which fruit is considered the national fruit of the Philippines?",
+    "choices": [
+      "Banana",
+      "Mango",
+      "Pineapple",
+      "Papaya"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 198,
+    "question": "How many rays does the sun on the Philippine flag have?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 199,
+    "question": "Which island group does Cebu belong to?",
+    "choices": [
+      "Luzon",
+      "Visayas",
+      "Mindanao",
+      "Palawan"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 200,
+    "question": "What is the Filipino term for the community spirit of cooperation, like neighbors helping move a house together?",
+    "choices": [
+      "Kapwa",
+      "Bayanihan",
+      "Pakikisama",
+      "Utang na loob"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 201,
+    "question": "Which Philippine city is known as the 'Summer Capital of the Philippines'?",
+    "choices": [
+      "Tagaytay",
+      "Baguio",
+      "Cebu City",
+      "Davao City"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 202,
+    "question": "What is the staple grain in most Filipino meals?",
+    "choices": [
+      "Corn",
+      "Wheat",
+      "Rice",
+      "Oats"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 203,
+    "question": "Who is the national hero of the Philippines, executed by the Spanish in 1896?",
+    "choices": [
+      "Andres Bonifacio",
+      "Jose Rizal",
+      "Apolinario Mabini",
+      "Marcelo del Pilar"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 204,
+    "question": "What is the term for the Filipino public transport vehicle made from surplus US military jeeps?",
+    "choices": [
+      "Tricycle",
+      "Jeepney",
+      "Kalesa",
+      "Habal-habal"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 205,
+    "question": "What is the traditional Filipino dress for women commonly called?",
+    "choices": [
+      "Barong Tagalog",
+      "Baro't Saya",
+      "Malong",
+      "Terno only"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 206,
+    "question": "Which Cebu festival honors the Santo Ni\u00f1o with street dancing?",
+    "choices": [
+      "Ati-Atihan",
+      "Sinulog",
+      "Dinagyang",
+      "Pahiyas"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 207,
+    "question": "In what year did the EDSA People Power Revolution take place?",
+    "choices": [
+      "1983",
+      "1986",
+      "1989",
+      "1992"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 208,
+    "question": "What is considered the Philippines' longest river?",
+    "choices": [
+      "Pasig River",
+      "Agno River",
+      "Cagayan River",
+      "Bicol River"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 209,
+    "question": "Which Philippine president was ousted from a long presidency by the 1986 EDSA Revolution?",
+    "choices": [
+      "Diosdado Macapagal",
+      "Ferdinand Marcos Sr.",
+      "Corazon Aquino",
+      "Fidel Ramos"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 210,
+    "question": "In what year was the current (1987) Philippine Constitution ratified?",
+    "choices": [
+      "1985",
+      "1986",
+      "1987",
+      "1990"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 211,
+    "question": "Which pre-colonial kingdom, located in present-day Cebu, was ruled by Rajah Humabon?",
+    "choices": [
+      "Rajahnate of Butuan",
+      "Rajahnate of Cebu",
+      "Sultanate of Sulu",
+      "Kingdom of Maynila"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 212,
+    "question": "Who is traditionally cited as the first person to circumnavigate the globe, as an interpreter on Magellan's voyage?",
+    "choices": [
+      "Lapu-Lapu",
+      "Enrique of Malacca",
+      "Antonio Pigafetta",
+      "Rajah Humabon"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 213,
+    "question": "Where was the Philippine Declaration of Independence from Spain proclaimed in 1898?",
+    "choices": [
+      "Manila",
+      "Kawit, Cavite",
+      "Malolos, Bulacan",
+      "Biak-na-Bato"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 214,
+    "question": "What is the collective name for the three priests \u2014 Gomez, Burgos, and Zamora \u2014 executed in 1872?",
+    "choices": [
+      "Los Tres M\u00e1rtires",
+      "GOMBURZA",
+      "Katipuneros",
+      "Ilustrados"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 215,
+    "question": "Which Philippine president established the Commonwealth government in 1935?",
+    "choices": [
+      "Emilio Aguinaldo",
+      "Manuel L. Quezon",
+      "Sergio Osme\u00f1a",
+      "Jose P. Laurel"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard"
+  }
 ]
